@@ -1,0 +1,775 @@
+/*CSS DOCUMENT*/
+
+
+/*Theme Name: Busy Square
+Author: Big Square
+
+
+[Table Of Contents] 
+
+	01- BODY
+	02- HEADERS 
+	03- GLOBAL STYLES
+	04- NAV 
+	05- MAIN CONTENT
+	06- FOOTER
+	07- MISC
+	*/
+
+	/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+	
+/*----------------------------------------------------------------------------- 
+=01 BODY  
+-----------------------------------------------------------------------------*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #7f7d78;
+	font-size: 13px;
+	line-height: 1.1;
+	background: #FFF;
+}
+
+body p {
+	color: #858484;
+	font-size: 15px;
+	font-family: ‘Lora’, serif;
+}
+
+
+
+#container {	
+	width: 960px;
+	margin: 0 auto; /*centers our container on the page */   
+}
+
+
+/*----------------------------------------------------------------------------- 
+=02 HEADERS
+-----------------------------------------------------------------------------*/
+
+
+#header {
+	padding: 0px 0px;
+	border-bottom: solid #3b3b3b 1px;
+	height: 118px;
+}
+
+#header h2 {
+	margin-top: 60px;
+	display: inline;
+}
+
+	
+#logo {
+	background: url(../images/personal_prints_logo.png) no-repeat;
+	width: 170px;
+	height: 135px;
+	float:left;
+	margin:15px 0 0 0;
+	}
+	
+#logo h1 {
+	text-indent: -99999em;	/* hides the H1 tag from the page, while semantically keeping it present in your HTML */
+	}
+
+/*----------------------------------------------------------------------------- 
+=03 GLOBAL STYLES 
+-----------------------------------------------------------------------------*/
+
+h2 {
+	font-family: ‘Lora’, serif; 
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 400;
+	color: #3b3b3b;
+	letter-spacing: 3px;
+}
+
+
+
+p { margin: 0px 0px 15px 0px; } /* there's no explicit rule, but putting about 15px margin only to the bottom of your p is generally a good rule of thumb */
+
+
+/*----------------------------------------------------------------------------- 
+=04 NAV 
+-----------------------------------------------------------------------------*/
+
+
+
+nav ul li {
+	float: right;
+	margin-right: 0px;	
+	text-decoration: none;
+}
+
+nav li a {
+	display: block;
+	width: 100px;
+	padding: 15px 0px;
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: #858484;
+	font-style: italic;
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-decoration: none;
+		
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+.cart {
+	background-color: #ebc200; 
+	display: block;
+	box-shadow: 0 0 5px #484747;
+	float:right;
+	margin: 0px 0px;
+
+}
+
+.cart a {
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: #3b3b3b;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 3px 10px 0px 10px;
+	float:left;
+}
+
+.cart img {
+	float: right;
+	padding: 3px;
+	width: 45px;
+	height: 45px;
+}
+
+
+.loginregister {
+	background-color: #3c3b3b; 
+	display: block;
+	box-shadow: 0 0 5px #484747;
+	float:right;
+	margin: 0px 0px;
+
+}
+
+.loginregister a {
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 15px 20px 0px 20px;
+	float:right;
+}
+
+.loginregister a:hover {
+	color: #ebc200; 
+}
+
+
+
+
+
+
+.rightalign {
+	float: right;
+}
+
+.leftalign {
+	float: left;
+}
+
+
+.mainnav {
+	float:right;
+}
+
+.mainnav ul li {
+	float:right;
+	margin-left: 30px;
+}
+
+
+.mainnav ul li a {
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: #3b3b3b;
+	font-size: 16px;
+	text-decoration: none;
+	letter-spacing: 3px;
+	padding-top: 47px;
+	margin-left: 30px;
+	margin-bottom: 15px;
+	display:block;
+}
+
+.mainnav ul li a:hover {
+    text-decoration: underline;
+
+}
+
+
+.mainnav ul li ul {
+    display:none;
+    position:absolute;
+    width:100%;
+    box-shadow: 0 2px 5px black;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background: white;
+}
+
+.mainnav ul li:hover ul {
+    display:block;
+    text-decoration:underline;
+    width: 200px;
+}
+
+
+.mainnav ul li li {
+    width:100%;
+    background: white;
+    padding-top: 10px;
+    margin-top:none;
+}
+.mainnav ul li ul li a {
+    background: white;
+    margin: 0 0 0 20px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+		
+/*----------------------------------------------------------------------------- 
+=05 MAIN CONTENT
+-----------------------------------------------------------------------------*/
+
+.homeproducts {
+	margin-top: 20px;
+	width:100%;
+}
+
+.homeproducts a {
+	text-decoration: none;
+	display: block;
+	float:left;
+	width: 23.5%;
+	margin-right: 2%;
+
+}
+
+.homeproducts a:last-of-type {
+	margin-right: 0;
+}
+
+.homeproducts h2 {
+	margin-bottom:16px;
+}
+
+.homeproducts a img {
+	border: 2px solid #999;
+	padding:2px;
+	display: block;
+	width: 100%;
+	-webkit-transition: all 0.5 linear;
+	-moz-transition: all 0.5 linear;
+	-o-transition: all 0.5 linear;
+	-ms-transition: all 0.5 linear;
+	transition: all 0.25s linear;
+}
+
+.homeproducts a:hover img {
+	border-color: #3b3b3b;
+	box-shadow: 0 0 5px #484747; 
+}
+
+.yellowboxes {
+	width:100%;
+}
+
+.yellowboxes a {
+	text-decoration: none;
+}
+
+.yellowbox1 {
+	background-color: #ebc200; 
+	display: block;
+	padding: 30px 10px;
+	box-shadow: 0 0 5px #484747;
+	float:left;
+	width: 48.8%;
+	height: 120px;
+	margin-top: 20px;
+	margin-right: 2.4%;
+}
+
+.yellowbox1 img {
+	width: 35px;
+	height: 35px;
+}
+
+.yellowbox2 {
+	background-color: #ebc200; 
+	display: block;
+	padding: 30px 10px;
+	box-shadow: 0 0 5px #484747;
+	float:right;
+	width: 48.8%;
+	height: 120px;
+	margin-top: 20px;
+	margin-right: 0;
+}
+
+
+
+.yellowbox2 p {
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: #3b3b3b;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-align: center;
+	margin: 10px 0;
+}
+
+
+.yellowbox2 h2 {
+	margin: 10px 0;
+}
+
+.yellowbox a {
+	text-decoration: none;
+	padding-bottom: 25px;
+}
+
+.socialmedia {
+	margin: 10px auto;
+	width: 27%;
+}
+
+.allproducts {
+	margin-top:33px;
+	width: 100%;
+}
+
+.product {
+	border: 2px solid #999;
+	display: block;
+	width: 23%;
+	margin-right: 0px;
+	margin-left: 2%;
+	float:left;
+}
+
+.product a:last-of-type {
+	margin-right: 0;
+}
+
+
+
+.product img {
+	display:block;
+	width:100%;
+	padding: 10px 10px 10px 10px;
+}
+
+.product h2 {
+	padding-left: 10px;
+	text-align:left;
+}
+
+.product p {
+	padding-left: 10px;
+	padding-top: 15px;
+	text-align:left;
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: #858484;
+	font-style: italic;
+	letter-spacing: 1px;
+	font-size: 20px;
+	text-decoration: none;
+	float:left;
+}
+
+.product h3 {
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: #3b3b3b;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 8px 10px 10px 10px;
+	float:right;
+}
+
+.personalise {
+	background-color: #ebc200; 
+	display: block;
+	box-shadow: 0 0 3px #484747;
+	float:right;
+	margin: 10px 10px;
+
+}
+
+.browsemenu {
+	float:left;
+	display:block;
+	width: 22%;
+	background-color:#3b3b3b;
+	height: 310px;
+	margin-right:26px;
+
+}
+
+
+.browsemenu li {
+	padding: 15px 20px 0px 20px;
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+.browsemenu li h3 {
+	border-bottom: solid white 1px;
+	padding: 10px 0 20px 0;
+}
+
+.browsemenu li h4 {
+	color: #ebc200
+}
+
+
+.browsemenu a {
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.browsemenu a:hover {
+	text-decoration: underline;
+}
+
+
+.singleproduct {
+	margin-top: 40px;
+
+}
+
+
+.productphoto {
+	float:left;
+}
+
+.productinfo {
+	float:left;
+}
+
+
+.product h2 {
+	padding-left: 10px;
+	text-align:left;
+	float:left;
+
+	
+
+
+}
+
+.productinfo p {
+	padding-left: 0px;
+	padding-top: 15px;
+	padding-bottom:none;
+	margin-bottom:1px;
+	text-align:left;
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: #858484;
+	font-style: italic;
+	letter-spacing: 1px;
+	font-size: 20px;
+	text-decoration: none;
+	float:left;
+}
+
+.productinfo h3 {
+	font-family: ‘Lora’, serif; 
+	font-weight: 400;
+	color: #3b3b3b;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 8px 10px 10px 10px;
+}
+
+.productinfo a {
+	background-color: #ebc200; 
+	display: block;
+	width:114px;
+	box-shadow: 0 0 3px #484747;
+	margin: 50px 0px;
+	text-align: center;
+	text-decoration:none;
+
+
+}
+
+.productinfo h2 {
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+.productinfo a:hover {
+	text-decoration:underline;
+
+}
+
+.quantity {
+	width: 40px;
+}
+
+.photocanvassizing {
+	margin-top: 60px;
+
+}
+.photocanvassizing h2 {
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 20px;
+
+}
+
+.photocanvassizing h3 {
+	color: #858484;
+	font-size: 17px;
+	line-height: 1.6;
+	font-family: ‘Lora’, serif;
+	font-weight:bold;
+
+}
+
+.columnleft {
+	margin-right:60px;
+	margin-bottom:100px;
+}
+
+.columnleft p{
+	margin-right:60px;
+	margin-bottom:2px;
+	padding-bottom: 0;
+	padding-bottom:3px;
+	font-size:15px;
+}
+
+.columnright {
+	float:left;
+	display: block;
+	width: 40%;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------- 
+=06 FOOTER 
+-----------------------------------------------------------------------------*/
+footer {
+	background: #e0e0de;
+	margin: 40px auto;
+}
+
+.footer { 
+	width: 960px;
+	margin: 0 auto;
+
+}
+
+.footertext {
+	float: left;
+	display: block;
+	width: 430px;
+	margin: 18px 140px 15px 0;
+	padding-right: 20px;
+}
+
+.footertext p {
+	color: #858484;
+	font-size: 13px;
+	line-height: 1.6;
+	text-align: left;
+	font-family: ‘Lora’, serif
+
+}
+
+.links {
+	float: left;
+	display:block;
+	width: 170px;
+	margin: 18px 0 15px 0;
+}
+
+.links a {
+	list-style: none;
+	color: #858484;
+	font-size: 13px;
+	line-height: 1.6;
+	text-decoration:none;
+	font-family: ‘Lora’, serif
+
+}
+
+.links a:hover {
+	text-decoration:underline;
+
+}
+
+.links p {
+	list-style: none;
+	color: #858484;
+	font-size: 13px;
+	line-height: 1.6;
+	text-decoration:none;
+	font-family: ‘Lora’, serif;
+	font-weight: bold;
+}
+
+.bottomfooter {
+	color: #858484;
+	font-size: 11px;
+	line-height: 1.7;
+	text-align: left;
+
+}
+
+
+.bottomfooter {
+	background: white;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+}
+
+.bottomfooter a:hover {
+	text-decoration:underline;
+
+}
+
+.bottomfooter a {
+	list-style: none;
+	color: #858484;
+	font-size: 11px;
+	line-height: 1.7;
+	text-decoration: none
+
+}
+
+.photocanvas {
+	margin-top: 33px;
+	float:left;
+	background: white;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+=06 FORMS 
+-----------------------------------------------------------------------------*/
+
+.contactform {
+	margin: 60px auto 200px auto;
+
+}
+
+
+.contactform h2 {
+	text-align: left;
+	margin-bottom: 15px;
+
+}
+
+.inputname {
+	width: 280px;
+	height: 25px;
+}
+
+.inputemail {
+	width: 280px;
+	height: 25px;
+}
+
+
+.message {
+	width: 280px;
+	height: 200px;
+}
+
+.productform {
+	margin-left: 40px;
+	float:left;
+}
+
+/*----------------------------------------------------------------------------- 
+=07 MISC 
+-----------------------------------------------------------------------------*/
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+.clear {
+	clear: both;	
+}
+
+
